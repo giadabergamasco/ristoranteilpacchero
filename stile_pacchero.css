@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Montserrat, Lato, sans-serif;
+    background-color: #243C56;
+    color:white;
+    margin: 0;
+    position:relative;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    background: #12273F;
+    padding:1em 5em;
+    filter: blur(2px);
+    -webkit-backdrop-filter: blur(1px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+}
+
+#logo{
+    justify-content: flex-start;
+    position: sticky;
+}
+
+ul {
+    list-style:none;
+    padding:1em;
+    margin:0;
+    position: sticky; /*permette ai testi di rimanere esclusi dal blur*/
+}
+
+li {
+   display: inline;
+   padding: 0.5em;
+   text-align: center;
+}
+a { 
+    text-decoration: none;
+    text-align:right;
+    color:white;
+}
+
+main {
+    padding:5em 0em 5em 0em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.section-presentazione{
+    padding: 0em 0em 15em 5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.text-presentazione, .text-storia {
+    padding-top:5em;
+    width: 400px;
+    height: 380px;;
+    font-size: 15px;
+    font-family: Lato;
+}
+.text-storia{
+    text-align:right;
+}
+h1{
+    font-family: Montserrat;
+    font-size:1.5em;
+}
+
+.section-storia{
+    padding: 0em 5em 15em 0em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.section-staff{
+    padding: 0em 5em 15em 5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* .sticky {
+    position: fixed;
+    width: 100%;
+  } */
