@@ -65,8 +65,19 @@ main {
     padding: 0em 0em 15em 5em;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.section-storia{
+    padding: 0em 5em 15em 0em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
 .text-presentazione, .text-storia {
     padding-top:5em;
     width: 400px;
@@ -74,29 +85,98 @@ main {
     font-size: 15px;
     font-family: Lato;
 }
+
 .text-storia{
     text-align:right;
 }
+
 h1{
     font-family: Montserrat;
     font-size:1.5em;
 }
 
-.section-storia{
-    padding: 0em 5em 15em 0em;
+.section-staff, .section-skill{
+    padding: 0em 5em 10em 5em;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.section-staff{
-    padding: 0em 5em 15em 5em;
-    width: 100%;
+.card-staff, .card-skill{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5em;
+    position: sticky;
+}
+.image-oblo{
+    width: 250px;
+}
+.card-testo{
+    text-align: center;
+}
+
+.staff-nome{
+    padding: 3em 0em 0.3em 0em;
+    margin: 0;
+    font-weight: 700;
+}
+
+.staff-ruolo{
+    margin:0;
+}
+
+.staff-text{
+    width: 300px; 
+}
+
+.card-skill{
+    background-color:#B5B5B5;
+    filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    flex-wrap: wrap;
+    padding: 4em 0em;
+    margin:4em 0em;
+    border-radius: 50px 0px;
+}
+.icon-skill{
+    width: 160px;
+    position: sticky;/*permette ai testi di rimanere esclusi dal blur*/
+}
+.skill-nome{
+    position: sticky;
+    font-weight: 700;
+    padding-top: 2em;
+}
+.skill-text{
+    position: sticky;
+    width: 300px;
+}
+
+footer{
+    width: 100%;
+    background:#12273F;
+    padding: 6em 5%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-/* .sticky {
-    position: fixed;
-    width: 100%;
-  } */
+
+.text-footer{
+    text-align: center;
+    font-size:0.6em;
+}
+.title-footer{
+    padding:3em;
+    font-size:1em;
+}
+
+.section-footer{
+    width: 33%;
+}
+
+.text-footer{
+    justify-content: space-between;
+}
