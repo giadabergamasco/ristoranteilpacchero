@@ -87,15 +87,18 @@ main {
 .section-menu{
     padding-left: 2em;
     display: flex;
+
 }
 
 #menu-laterale {
     margin: 0;
 }
+
 /* Questo serve a scrollare nelle card del menu */
 .scrolling-wrapper{
     display: flex;
     overflow-x: auto;
+    margin: 0%;
 
     .card-menu{
       flex: 0 0 auto;
@@ -103,6 +106,10 @@ main {
   }
 
   .titolo-sezione-menu{
-    margin: 0 em;
   }
 
+  .contenitore{
+      width: 80%;
+      margin:0;
+      float: right;
+  }
