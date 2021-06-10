@@ -4,20 +4,25 @@
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <title>Ristorante il pacchero</title>
-    </head>
+</head>
 
 <body>
-    <div class="container">
+    <div class="flex-container">
     <navbar>
-        <div id="logo"><img height="80px" src="images/logo.png" alt="Il pacchero"></div>
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">MENU</a></li>
-            <li><a href="#">RUBRICA</a></li>
-            <li><a href="#">PRENOTAZIONI</a></li>
-            <li><a href="#">CONTATTI</a></li>
-        </ul>
+        <div class="blur">
+            <div><img height="80px" src="images/logo.png" alt="Il pacchero"></div>
+            <div class="navbar-text">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">RUBRICA</a></li>
+                <li><a href="#">PRENOTAZIONI</a></li>
+                <li><a href="#">CONTATTI</a></li>
+            </ul>
+            </div>
+        </div>
     </navbar>
 
     <main>
@@ -34,7 +39,14 @@
                 la nostra cucina, composta di prodotti freschi del nostro mare 
                 e di prodotti genuini attentamente selezionati.</p> 
                 </div>
-            <div class="image-presentazione"><img height="800px" src="images/idea_di_cucina.png"></div>
+            
+    <picture>
+        <source media="(max-width:650px)" srcset="images/idea_di_cucina_650.png" height="100px" >
+        <!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
+        <img src="images/idea_di_cucina.png" alt="Flowers" height="800px">
+    </picture>
+            <!-- <div class="image-presentazione"><img height="800px" src="images/idea_di_cucina.png">
+            </div> -->
         </div>
 
         <div class="section-storia">
@@ -50,7 +62,7 @@
                 la nostra cucina, composta di prodotti freschi del nostro mare 
                 e di prodotti genuini attentamente selezionati.</p> 
                 </div>
-            <div class="image-storia"><img height="700px" src="images/storia.png"></div>
+                <div class="image-storia"><img height="700px" src="images/storia.png"></div>
         </div>
 
         <div class="section-staff">

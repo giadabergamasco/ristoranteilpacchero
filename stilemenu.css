@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+body {
+    font-family: Roboto, Montserrat, Lato, sans-serif;
+    background-image: url("images/background_homepag.png");
+    color:white;
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blur {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+   -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding:1em 5em;
+    position: fixed;
+}
+
+ul {
+    list-style:none;
+    margin:0;
+    padding:1em;
+}
+
+li {
+    display: inline;
+    padding: 0.5em;
+    text-align: center;
+ }
+
+a { 
+    text-decoration: none;
+    text-align:right;
+    color:white;
+}
+
+main {
+    margin-top: 10em;
+    width: 100%;
+}
+  
+#menu-icon{
+    align-items: center;
+}
+#icon-menu{
+    display: block;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.card-menu{
+    background-color:#FFFFFF;
+    border-radius: 10px;
+    height: 17em;
+    width: 300px;
+    margin:1em;
+}
+
+.text-menu{
+    padding-left: 1em;
+}
+
+.nome-piatto{
+    padding-top: 1em;
+    margin: 0;
+    font-weight: 700;
+    color: #243C56;
+}
+
+.descrizione-piatto{
+    font-family: Lato;
+    font-size: 0.8em;
+    color: #5B6167;
+}
+
+.section-menu{
+    padding-left: 2em;
+    display: flex;
+}
+
+#menu-laterale {
+    margin: 0;
+}
+/* Questo serve a scrollare nelle card del menu */
+.scrolling-wrapper{
+    display: flex;
+    overflow-x: auto;
+
+    .card-menu{
+      flex: 0 0 auto;
+    }
+  }
+
+  .titolo-sezione-menu{
+    margin: 0 em;
+  }
+
