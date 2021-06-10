@@ -13,6 +13,7 @@ body {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .blur {
@@ -33,6 +34,12 @@ ul {
     padding:1em;
 }
 
+.ul-side-menu{
+    list-style:none;
+    margin:0;
+    padding:1em;
+    position: fixed;
+}
 li {
     display: inline;
     padding: 0.5em;
@@ -44,19 +51,39 @@ a {
     text-align:right;
     color:white;
 }
+.contenitore-grande{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10em;
+}
 
 main {
-    margin-top: 10em;
+    width: 90%;
+    margin:0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenitore{
     width: 100%;
+    margin:0;
+    justify-content: flex-end;
+    padding-bottom:5em;
 }
-  
-#menu-icon{
-    align-items: center;
+.titolo-sezione-menu{
+    padding-left:1em;
 }
-#icon-menu{
+
+h2{
+   font-size: 1.2em;
+}
+.side-menu{
+    
+}
+
+#li-icon-menu{
     display: block;
     text-align: left;
-    align-items: flex-start;
 }
 
 .card-menu{
@@ -84,32 +111,43 @@ main {
     color: #5B6167;
 }
 
-.section-menu{
-    padding-left: 2em;
-    display: flex;
-
-}
-
-#menu-laterale {
-    margin: 0;
-}
-
 /* Questo serve a scrollare nelle card del menu */
 .scrolling-wrapper{
     display: flex;
     overflow-x: auto;
-    margin: 0%;
 
     .card-menu{
       flex: 0 0 auto;
     }
   }
 
-  .titolo-sezione-menu{
+
+footer{
+    width: 100%;
+    background:#12273F;
+    padding: 6em 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.text-footer{
+    text-align: center;
+    font-size:0.6em;
+}
+.title-footer{
+    padding:3em;
+    font-size:1em;
+}
+
+.section-footer{
+    width: 33%;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar, .blur{
+        flex-direction: column; 
+    }
   }
 
-  .contenitore{
-      width: 80%;
-      margin:0;
-      float: right;
-  }
+
