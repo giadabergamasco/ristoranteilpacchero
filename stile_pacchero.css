@@ -102,9 +102,11 @@ h1{
     align-items: center;
     padding-bottom: 5em;
 }
+
 .image-oblo{
     width: 250px;
 }
+
 .card-testo{
     text-align: center;
 }
@@ -134,16 +136,15 @@ h1{
     border-radius: 50px 0px;
     z-index: -1;
 }
+
 .icon-skill{
-    width: 160px;
-    
+    width: 160px;  
 }
 .skill-nome{
     font-weight: 700;
     padding-top: 2em;
 }
 .skill-text{
-
     width: 300px;
 }
 
@@ -187,39 +188,3 @@ footer{
     }
 
   }
-
-    #menu-icon{
-    align-items: center;
-}
-    #icon-menu{
-    display: block;
-    text-align: left;
-    align-items: flex-start;
-}
-
-.card-menu{
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 5em;
-    width: 300px;
-}
-.card-menu{
-    background-color:#FFFFFF;
-    border-radius: 10px;
-    height: 17em;
-}
-.text-menu{
-    padding-left: 1em;
-}
-.nome-piatto{
-    padding-top: 1em;
-    margin: 0;
-    font-weight: 700;
-    color: #243C56;
-}
-
-.descrizione-piatto{
-    font-family: lato;
-    font-size: 0.8em;
-    color: #5B6167;
-}
