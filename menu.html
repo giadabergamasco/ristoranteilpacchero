@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="stilemenu.css" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Ristorante il pacchero</title>
@@ -11,10 +12,12 @@
     <div class="flex-container">
         <navbar>
             <div class="blur">
-                <div id="logo"><img height="80px" src="images/logo.png" alt="Il pacchero"></div>
-                <div class="navbar-text">
+                <div id="logo"><a href="#" class="active"><img height="80px" src="images/logo.png" alt="Il pacchero"> </a></div>
+                <div class="topnav" id="myTopnav">
                 <ul>
-                    <li><a href="#">HOME</sa></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i></a></li>
+                    <li><a href="#">HOME</a></li>
                     <li><a href="#">MENU</a></li>
                     <li><a href="#">RUBRICA</a></li>
                     <li><a href="#">PRENOTAZIONI</a></li>
@@ -25,8 +28,8 @@
         </navbar>
 
     <div class="macro-categorie">
-    <p>MENU</p>
-    <p>VINI & BEVANDE</p>
+    <a href="#">MENU</a>
+    <a href="#">VINI & BEVANDE</a>
     </div>
 
     <!-- contenitore grande contiene menu-icon e main space-between li fa stare ordinare-->
@@ -34,12 +37,12 @@
     <!-- sezione del menu con icone-->
     <div class="side-menu">
         <ul class="ul-side-menu">
-            <li id="li-icon-menu"><a href="">Degustazioni</a></li>
+            <li id="li-icon-menu"><a href="#collegamento-degustazione">Degustazione</a></li>
             <li id="li-icon-menu"><a href="#collegamento-crudo">Crudo</a></li>
             <li id="li-icon-menu"><a href="#collegamento-antipasti">Antipasti</a></li>
-            <li id="li-icon-menu">Primi Piatti</li>
-            <li id="li-icon-menu">Secondi Piatti</li>
-            <li id="li-icon-menu">Dessert</li>
+            <li id="li-icon-menu"><a href="#collegamento-primipiatti">Primi Piatti</a></li>
+            <li id="li-icon-menu"><a href="#collegamento-secondipiatti">Secondi Piatti</a></li>
+            <li id="li-icon-menu"><a href="#collegamento-dessert">Dessert</a></li>
         </ul>
     </div> 
 
@@ -48,6 +51,7 @@
     <!--contenitore degustazioni-->
     <div class="contenitore">
         <div class="titolo-sezione-menu">
+            <a id="collegamento-degustazione" class="anchor"></a>
             <h2>DEGUSTAZIONE</h2>
             <p>Vi raccontiamo tutto di noi in 6 portate. Tutto è concentrato sulla ricerca 
                 della materia prima, sulla scelta di piccoli produttori e sulla valorizzazione del pescato.</p>
@@ -194,6 +198,7 @@
     <!--contenitore primi piatti-->
     <div class="contenitore">
         <div class="titolo-sezione-menu">
+            <a id="collegamento-primipiatti" class="anchor"></a>
             <h2>PRIMI PIATTI</h2>
             <p>Vi raccontiamo tutto di noi in 6 portate. Tutto è concentrato sulla ricerca 
                 della materia prima, sulla scelta di piccoli produttori e sulla valorizzazione del pescato.</p>
@@ -242,7 +247,8 @@
     <!--contenitore secondi piatti-->
     <div class="contenitore">
         <div class="titolo-sezione-menu">
-            <h2>DEGUSTAZIONE</h2>
+            <a id="collegamento-secondipiatti" class="anchor"></a>
+            <h2>SECONDI PIATTI</h2>
             <p>Vi raccontiamo tutto di noi in 6 portate. Tutto è concentrato sulla ricerca 
                 della materia prima, sulla scelta di piccoli produttori e sulla valorizzazione del pescato.</p>
         </div>
@@ -287,57 +293,11 @@
         </div>
     </div>
 
-    <!--contenitore menu terra-->
-    <div class="contenitore">
-        <div class="titolo-sezione-menu">
-            <h2>MENU TERRA</h2>
-            <p>Vi raccontiamo tutto di noi in 6 portate. Tutto è concentrato sulla ricerca 
-                della materia prima, sulla scelta di piccoli produttori e sulla valorizzazione del pescato.</p>
-        </div>
-
-        <div class="scrolling-wrapper">
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
-                <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
-                </div>
-            </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
-                <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
-                </div>
-            </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
-                <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
-                </div>
-            </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
-                <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
-                </div>
-            </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
-                <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
-                </div>
-            </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
-                <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!--contenitore dessert-->
     <div class="contenitore">
         <div class="titolo-sezione-menu">
+            <a id="collegamento-dessert" class="anchor"></a>
             <h2>DESSERT</h2>
             <p>Vi raccontiamo tutto di noi in 6 portate. Tutto è concentrato sulla ricerca 
                 della materia prima, sulla scelta di piccoli produttori e sulla valorizzazione del pescato.</p>
@@ -410,7 +370,7 @@
         <a href="#">Tutte le ricette</a><br></div>
     <!-- </div> -->
     <!-- <div class="section-footer"> -->
-    <div class="logo"><img height="80px" src="images/logo.png" alt="Il pacchero"></div>
+    <div class="text-footer"><img height="80px" src="images/logo.png" alt="Il pacchero"></div>
     <!-- </div> -->
 
     <!-- <div class="section-footer"> -->
@@ -429,10 +389,21 @@
         <a class="title-footer" href="#">CONTATTI</a><br><br>
         <a href="#">089 489010</a><br> 
         <a href="#">334 5432020</a><br>
-        <a href="#">ristoranteilpacchero@hotmail.it</a><br></div>
     </div> 
     </footer>
 
 </div>
 </body>
 </html>
+
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
