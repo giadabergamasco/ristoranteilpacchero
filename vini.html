@@ -11,21 +11,19 @@
 <body>
     <div class="flex-container">
 
-        <div class="blur">
-            <div class="topnav" id="myTopnav">  
-                <div><a href="#"><img class="logo" height="80px" src="images/logo.png" alt="Il pacchero"></a></div>
-                <div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i></a>
-                <a href="../ristoranteilpacchero/index.html">HOME</a>
-                <a href="../ristoranteilpacchero/menu.html">MENU</a>
-                <a href="#">RUBRICA</a>
-                <a href="#">PRENOTAZIONI</a>
-                <a href="#">CONTATTI</a>
+            <div class="blur">
+                <div id="logo"><a href="#"><img height="80px" src="images/logo.png" alt="Il pacchero"> </a></div>
+                <div class="topnav" id="myTopnav">  
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i></a>
+                    <a href="#" class="active">HOME</a>
+                    <a href="#">MENU</a>
+                    <a href="#">RUBRICA</a>
+                    <a href="#">PRENOTAZIONI</a>
+                    <a href="#">CONTATTI</a>
+                </div>
+                </div>
             </div>
-        </div>
-            </div>
-        </div>
 
     <div class="macro-categorie">
     <a href="../ristoranteilpacchero/menu.html">MENU</a>
@@ -35,31 +33,14 @@
     <!-- contenitore grande contiene menu-icon e main space-between li fa stare ordinare-->
 <div class="contenitore-grande"> 
     <!-- sezione del menu con icone-->
-      <div class="side-menu">
+    <div class="side-menu">
         <ul class="ul-side-menu">
-            <li id="li-icon-menu"><a href="#collegamento-degustazione">
-                <img height="70px"src="images/icon/ degustazione_icon72 dpi.svg"></a>
-                <a id="sezioni-menu" href="#collegamento-degustazione">Degustazione</a></li>
-
-            <li id="li-icon-menu"><a href="#collegamento-crudo">
-                <img height="70px" src="images/icon/ crudo_icon72 dpi.svg"></a>
-                <a id="sezioni-menu" href="#collegamento-crudo">Crudo</a></li>
-
-            <li id="li-icon-menu"><a href="#collegamento-antipasti">
-                <img height="70px" src="images/icon/ antipasti_icon72 dpi.svg"></a>
-                <a id="sezioni-menu" href="#collegamento-antipasti">Antipasti</a></li>
-            
-            <li id="li-icon-menu"><a href="#collegamento-primipiatti">
-                <img height="70px" src="images/icon/ primi_icon72 dpi.svg"></a>
-                <a id="sezioni-menu" href="#collegamento-primipiatti">Primi Piatti</a></li>
-    
-            <li id="li-icon-menu"><a href="#collegamento-secondipiatti">
-                <img height="70px" src="images/icon/ antipasti_icon72 dpi.svg"></a>
-                <a id="sezioni-menu" href="#collegamento-secondipiatti">Secondi Piatti</a></li>
-
-            <li id="li-icon-menu"><a href="#collegamento-dessert">
-                <img height="70px" src="images/icon/ dessert_icon72 dpi.svg"></a>
-                <a id="sezioni-menu" href="#collegamento-dessert">Dessert</a></li>
+            <li id="li-icon-menu"><a href="#collegamento-degustazione">Degustazione</a></li>
+            <li id="li-icon-menu"><a href="#collegamento-crudo">Crudo</a></li>
+            <li id="li-icon-menu"><a href="#collegamento-antipasti">Antipasti</a></li>
+            <li id="li-icon-menu"><a href="#collegamento-primipiatti">Primi Piatti</a></li>
+            <li id="li-icon-menu"><a href="#collegamento-secondipiatti">Secondi Piatti</a></li>
+            <li id="li-icon-menu"><a href="#collegamento-dessert">Dessert</a></li>
         </ul>
     </div> 
 
@@ -412,7 +393,8 @@
 </div>
 </body>
 </html>
-<ul class="ul-side-menu" id="mySideMenu"></ul>
+
+
 <script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
@@ -422,5 +404,4 @@
         x.className = "topnav";
       }
     }
-    
-</script>
+    </script>
