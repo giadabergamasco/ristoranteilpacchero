@@ -11,19 +11,21 @@
 <body>
     <div class="flex-container">
 
-            <div class="blur">
-                <div id="logo"><a href="#"><img height="80px" src="images/logo.png" alt="Il pacchero"> </a></div>
-                <div class="topnav" id="myTopnav">  
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i></a>
-                    <a href="#" class="active">HOME</a>
-                    <a href="#">MENU</a>
-                    <a href="#">RUBRICA</a>
-                    <a href="#">PRENOTAZIONI</a>
-                    <a href="#">CONTATTI</a>
-                </div>
-                </div>
+        <div class="blur">
+            <div class="topnav" id="myTopnav">  
+                <div><a href="#"><img class="logo" height="80px" src="images/logo.png" alt="Il pacchero"></a></div>
+                <div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+                <a href="../ristoranteilpacchero/index.html">HOME</a>
+                <a href="../ristoranteilpacchero/menu.html">MENU</a>
+                <a href="#">RUBRICA</a>
+                <a href="#">PRENOTAZIONI</a>
+                <a href="#">CONTATTI</a>
             </div>
+        </div>
+            </div>
+        </div>
 
     <div class="macro-categorie">
     <a href="../ristoranteilpacchero/menu.html">MENU</a>
@@ -33,14 +35,25 @@
     <!-- contenitore grande contiene menu-icon e main space-between li fa stare ordinare-->
 <div class="contenitore-grande"> 
     <!-- sezione del menu con icone-->
-    <div class="side-menu">
-        <ul class="ul-side-menu">
-            <li id="li-icon-menu"><a href="#collegamento-degustazione">Degustazione</a></li>
-            <li id="li-icon-menu"><a href="#collegamento-crudo">Crudo</a></li>
-            <li id="li-icon-menu"><a href="#collegamento-antipasti">Antipasti</a></li>
-            <li id="li-icon-menu"><a href="#collegamento-primipiatti">Primi Piatti</a></li>
-            <li id="li-icon-menu"><a href="#collegamento-secondipiatti">Secondi Piatti</a></li>
-            <li id="li-icon-menu"><a href="#collegamento-dessert">Dessert</a></li>
+      <div class="side-menu">
+        <ul class="ul-side-vini">
+            <li id="li-icon-menu">
+                <a id="sezioni-vini" href="#collegamento-vinibianchi-ita">Vini Bianchi - Italia</a></li>
+            
+            <li id="li-icon-menu">
+                <a id="sezioni-vini" href="#collegamento-vinibianchi-campania">Vini Bianchi - Campania</a></li>
+
+            <li id="li-icon-menu">
+                <a id="sezioni-vini" href="#collegamento-vinibianchi-fra">Vini Bianchi - Francia</a></li>
+            
+            <li id="li-icon-menu">
+                <a id="sezioni-vini" href="#collegamento-vinirosati">Vini Rosati</a></li>
+    
+            <li id="li-icon-menu">
+                <a id="sezioni-vini" href="#collegamento-spumanti">Spumanti</a></li>
+
+            <li id="li-icon-menu">
+                <a id="sezioni-vini" href="#collegamento-champagne">Champagne</a></li>
         </ul>
     </div> 
 
@@ -49,47 +62,45 @@
     <!--contenitore degustazioni-->
     <div class="contenitore">
         <div class="titolo-sezione-menu">
-            <a id="collegamento-degustazione" class="anchor"></a>
-            <h2>DEGUSTAZIONE</h2>
-            <p>Vi raccontiamo tutto di noi in 6 portate. Tutto è concentrato sulla ricerca 
-                della materia prima, sulla scelta di piccoli produttori e sulla valorizzazione del pescato.</p>
+            <a id="collegamento-vinibianchi-ita" class="anchor"></a>
+            <h2>VINI BIANCHI - ITALIA</h2>
         </div>
 
         <div class="scrolling-wrapper">
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
         </div>
@@ -98,47 +109,45 @@
     <!--contenitore crudo-->
     <div class="contenitore">
         <div class="titolo-sezione-menu">
-            <a id="collegamento-crudo" class="anchor"></a>
-            <h2>CRUDO</h2>
-            <p>Vi raccontiamo tutto di noi in 6 portate. Tutto è concentrato sulla ricerca 
-                della materia prima, sulla scelta di piccoli produttori e sulla valorizzazione del pescato.</p>
+            <a id="collegamento-vinibianchi-campania" class="anchor"></a>
+            <h2>VINI BIANCHI - CAMPANIA</h2>
         </div>
 
         <div class="scrolling-wrapper">
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
         </div>
@@ -147,47 +156,45 @@
     <!--contenitore antipasti-->
     <div class="contenitore">
         <div class="titolo-sezione-menu">
-            <a id="collegamento-antipasti" class="anchor"></a>
-            <h2>ANTIPASTI</h2>
-            <p>Vi raccontiamo tutto di noi in 6 portate. Tutto è concentrato sulla ricerca 
-                della materia prima, sulla scelta di piccoli produttori e sulla valorizzazione del pescato.</p>
+            <a id="collegamento-vinibianchi-fra" class="anchor"></a>
+            <h2>VINI BIANCHI - FRANCIA</h2>
         </div>
 
         <div class="scrolling-wrapper">
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
         </div>
@@ -196,47 +203,45 @@
     <!--contenitore primi piatti-->
     <div class="contenitore">
         <div class="titolo-sezione-menu">
-            <a id="collegamento-primipiatti" class="anchor"></a>
-            <h2>PRIMI PIATTI</h2>
-            <p>Vi raccontiamo tutto di noi in 6 portate. Tutto è concentrato sulla ricerca 
-                della materia prima, sulla scelta di piccoli produttori e sulla valorizzazione del pescato.</p>
+            <a id="collegamento-vinirosati" class="anchor"></a>
+            <h2>VINI ROSATI</h2>
         </div>
 
         <div class="scrolling-wrapper">
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
         </div>
@@ -245,47 +250,45 @@
     <!--contenitore secondi piatti-->
     <div class="contenitore">
         <div class="titolo-sezione-menu">
-            <a id="collegamento-secondipiatti" class="anchor"></a>
-            <h2>SECONDI PIATTI</h2>
-            <p>Vi raccontiamo tutto di noi in 6 portate. Tutto è concentrato sulla ricerca 
-                della materia prima, sulla scelta di piccoli produttori e sulla valorizzazione del pescato.</p>
+            <a id="collegamento-spumanti" class="anchor"></a>
+            <h2>VINI SPUMANTI</h2>
         </div>
 
         <div class="scrolling-wrapper">
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
         </div>
@@ -295,52 +298,49 @@
     <!--contenitore dessert-->
     <div class="contenitore">
         <div class="titolo-sezione-menu">
-            <a id="collegamento-dessert" class="anchor"></a>
-            <h2>DESSERT</h2>
-            <p>Vi raccontiamo tutto di noi in 6 portate. Tutto è concentrato sulla ricerca 
-                della materia prima, sulla scelta di piccoli produttori e sulla valorizzazione del pescato.</p>
+            <a id="collegamento-champagne" class="anchor"></a>
+            <h2>CHAMPAGNE</h2>
         </div>
 
         <div class="scrolling-wrapper">
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
-            <div class="card-menu"><img width= 300px class="image-menu" src="images/spaghetti_vongole.png">
+            <div class="card-vini"><img width="194px" class="image-vini" src="images/vini/fiano.png">
                 <div class="text-menu"> 
-                    <p class="nome-piatto">Spaghetti con vongole</p>
-                    <p class="descrizione-piatto">Spaghetti alla chitarra Vicidomini con vongole e peperoncini verdi.</p>
+                    <p class="nome-piatto">Fiano di Avellino</p>
+                    <p class="descrizione-piatto">Guido Marsella - Fiano 100%</p>
                 </div>
             </div>
         </div>
     </div>
-
     </main> 
 </div>
 
@@ -393,8 +393,7 @@
 </div>
 </body>
 </html>
-
-
+<ul class="ul-side-menu" id="mySideMenu"></ul>
 <script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
@@ -404,4 +403,5 @@
         x.className = "topnav";
       }
     }
-    </script>
+    
+</script>

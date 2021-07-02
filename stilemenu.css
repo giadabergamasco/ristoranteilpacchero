@@ -35,7 +35,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .topnav a {
@@ -88,6 +88,7 @@ a.anchor {
     display: flex;
     justify-content: space-around;
 }
+
 .macro-categorie a:hover {
     border-bottom: 3px solid white;
 }
@@ -113,21 +114,20 @@ main {
     justify-content: flex-end;
     padding-bottom:10em;
 }
-.titolo-sezione-menu{
+/* .titolo-sezione-menu{
     padding-left:1em;
-}
+} */
 
 h2{
    font-size: 1.2em;
 }
 
-.ul-side-menu{
+.ul-side-menu, .ul-side-vini{
     list-style:none;
     margin:0;
     padding-left:0;
     position: fixed;
     margin-top:-150px;
-    z-index: -1;
 }
 
 #li-icon-menu{
@@ -166,6 +166,7 @@ h2{
     font-family: Lato;
     font-size: 0.8em;
     color: #5B6167;
+    padding-right:1em;
 }
 
 /* Questo serve a scrollare nelle card del menu */
@@ -203,6 +204,14 @@ footer{
 }
 
 
+/* SEZIONE VINI */
+.card-vini {
+    background-color:#FFFFFF;
+    border-radius: 10px;
+    height: 340px;
+    width: 194px;
+    margin: 1em;
+}
 
 
 
@@ -220,7 +229,7 @@ footer{
 }
 
 @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative; display: unset;}
+    .topnav.responsive {position: relative; display: unset;z-index: 2;}
     .topnav.responsive .icon {
         position: absolute;
         right: 0;
@@ -252,6 +261,11 @@ footer{
     }
     .ul-side-menu{
         width: 20%;
+
+        /* z-index: -1; SE SI INSERISCE QUESTO IL MENU VA SOPRA MA NON SI CLICCA*/ 
+    }
+    .ul-side-vini{
+        width: 25%;
     }
     #li-icon-menu{
         padding:0em;
@@ -259,12 +273,25 @@ footer{
     #sezioni-menu{
         display: none;
     }
+    #sezioni-vini{
+        font-size:0.7em;
+        text-align: left;
+        padding-left: 1em;
+    }
     .card-menu{
         width: 240px;
+        height: 240px;
     }
-    .image-menu{
+   .image-menu{
         width: 240px;
     }
 
-
+    .card-vini{
+        width: 150px;
+        height: 310px;
+    }
+    .image-vini{
+        width: 150px;
+    }
 }
+
