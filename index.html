@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="stile_pacchero.css" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Ristorante il pacchero</title>
@@ -10,20 +11,21 @@
 
 <body>
     <div class="flex-container">
-    <navbar>
         <div class="blur">
-            <div><img height="80px" src="images/logo.png" alt="Il pacchero"></div>
-            <div class="navbar-text">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">RUBRICA</a></li>
-                <li><a href="#">PRENOTAZIONI</a></li>
-                <li><a href="#">CONTATTI</a></li>
-            </ul>
+            <div class="topnav" id="myTopnav">  
+                <div><a href="#"><img class="logo" height="80px" src="images/logo.png" alt="Il pacchero"></a></div>
+                
+                <div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+                    <a href="../ristoranteilpacchero/index.html">HOME</a>
+                    <a href="../ristoranteilpacchero/menu.html">MENU</a>
+                    <a href="../ristoranteilpacchero/rubrica.html">RUBRICA</a>
+                    <a href="#">PRENOTAZIONI</a>
+                    <a href="#">CONTATTI</a>
+                </div>
             </div>
         </div>
-    </navbar>
 
     <main>
         <div class="section-presentazione">
@@ -184,14 +186,14 @@
 </body>
 </html>
 
-<!-- <script>
-    window.onscroll = function() {myFunction()};
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-    
+<script>
     function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } 
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
     }
-    </script> -->
+    
+</script>

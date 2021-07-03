@@ -10,11 +10,11 @@ body {
     margin: 0;
 }
 
-.flex-container {
+/* .flex-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-}
+} */
 
 .blur {
     display: flex;
@@ -26,6 +26,7 @@ body {
     backdrop-filter: blur(10px);
     padding:1em 5em;
     position: fixed;
+    z-index: 1;
 }
 
 .topnav {
@@ -57,7 +58,7 @@ body {
   color: white;
 } 
 
-ul {
+/* ul {
     list-style:none;
     margin:0;
     padding:1em;
@@ -67,7 +68,7 @@ li {
     display: inline;
     padding: 0.5em;
     text-align: center;
-} 
+}  */
 
 a { 
     text-decoration: none;
@@ -78,13 +79,13 @@ a {
 a.anchor {
   display: block;
   position: relative;
-  top: -140px;
+  top: -185px;
   visibility: hidden;
 }
 
 .macro-categorie{
     padding-top: 10em;
-    padding-bottom: 2em;
+    padding-bottom: 2.1em;
     display: flex;
     justify-content: space-around;
 }
@@ -114,20 +115,24 @@ main {
     justify-content: flex-end;
     padding-bottom:10em;
 }
-/* .titolo-sezione-menu{
+.titolo-sezione-menu{
     padding-left:1em;
-} */
+    padding-bottom: 0.9em;
+}
 
 h2{
    font-size: 1.2em;
 }
-
+.side-menu{
+    margin-bottom: 20em;
+}
 .ul-side-menu, .ul-side-vini{
     list-style:none;
     margin:0;
+    margin-bottom: 10em;
     padding-left:0;
     position: fixed;
-    margin-top:-150px;
+    margin-top:-165px;
 }
 
 #li-icon-menu{
@@ -149,6 +154,7 @@ h2{
     height: 17em;
     width: 300px;
     margin: 1em;
+    flex: 0 0 auto;
 }
 
 .text-menu{
@@ -158,6 +164,7 @@ h2{
 .nome-piatto{
     padding-top: 1em;
     margin: 0;
+    font-size: 14px;
     font-weight: 700;
     color: #243C56;
 }
@@ -175,9 +182,6 @@ h2{
     overflow-x: auto;
 }
 
-.card-menu{
-    flex: 0 0 auto;
-}
 
 footer{
     width: 100%;
@@ -186,7 +190,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    z-index: 1;
 }
 
 .text-footer{
@@ -212,8 +215,6 @@ footer{
     width: 194px;
     margin: 1em;
 }
-
-
 
 
 
@@ -261,11 +262,9 @@ footer{
     }
     .ul-side-menu{
         width: 20%;
-
-        /* z-index: -1; SE SI INSERISCE QUESTO IL MENU VA SOPRA MA NON SI CLICCA*/ 
     }
     .ul-side-vini{
-        width: 25%;
+        width: 20%;
     }
     #li-icon-menu{
         padding:0em;
@@ -274,7 +273,7 @@ footer{
         display: none;
     }
     #sezioni-vini{
-        font-size:0.7em;
+        font-size:0.6em;
         text-align: left;
         padding-left: 1em;
     }
