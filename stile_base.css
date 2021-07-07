@@ -5,7 +5,7 @@
 ::-webkit-scrollbar-button{width:2px;height:2px;}
 body {
     font-family: Roboto, Montserrat, Lato, sans-serif;
-    background-image: url("images/background_homepag.png");
+    background-image: url("images/background_homepage@2x.png");
     color:white;
     margin: 0;
 }
