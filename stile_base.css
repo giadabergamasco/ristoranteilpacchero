@@ -123,8 +123,8 @@ footer{
 @media screen and (max-width: 600px) {
     .footer{display: flex;}
     .text-footer {
-    width: 100px;
-    flex-wrap: wrap;
+    width: 80px;
     justify-content:center;}
 }
+
 /* FINE */
