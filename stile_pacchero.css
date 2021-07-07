@@ -125,6 +125,7 @@ h1{
 }
 
 
+
 @media screen and (max-width: 600px) {
     .navbar, .blur{
         flex-direction: column;
@@ -133,14 +134,14 @@ h1{
     .main {
         flex-direction: column;
     }
-    .section-presentazione {
+    .section-presentazione ,.section-storia{
+        padding:3em;
         justify-content:center;
-        width: 70%;
     }
-    .image-presentazione{
-        
+    .image{
+        display: flex;
         justify-content: center;
-        align-items: center;
+
     }
     .text-presentazione, .text-storia {
         text-align: center;

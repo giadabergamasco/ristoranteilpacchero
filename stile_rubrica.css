@@ -322,3 +322,25 @@ h3{
     color: #5B6167;
     padding-right:1em;
 }
+
+@media screen and (max-width: 600px) {
+main{
+    padding:10em 3em;
+}
+.contenitore-blur{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* .image{
+    display: none;
+} */
+h2{
+    font-size:1.2em ;
+}
+.card-rubrica{
+    height: 16em;
+    margin-bottom: 2em;
+
+}
+}
