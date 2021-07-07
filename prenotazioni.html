@@ -32,19 +32,19 @@
          <!--contenitore ricetta del mese-->
          <div class="titolo"><h2>PRENOTAZIONI</h2></div>
     <div class="contenitore">
-        <!-- <picture>
-            <source media="(min-width:650px)" srcset="mappatav_600px.png w600">
-            <source media="(min-width:465px)" srcset="mappatav-300px.png w300">
-            <img src="images/ mappatav_600px.png" alt="Mappa Tavoli">
-          </picture> -->
-    <div class="image"></div> <img height=600px src="images/ mappatav.png">
+    <picture>
+        <source media="(min-width:1024px)" srcset="images/rubrica/risotto_static@2x.png">
+        <source media="(max-width:465px)" srcset="images/mappa_300@2x.png">
+        <img class="image" src="images/ mappatav.png" alt="Idea di Cucina">
+    </picture>
+    <!-- <div class="image"></div> <img height=600px src="images/ mappatav.png"> -->
     <div class="contenitore-blur-info">
         <form action="/action_page.php">
             <!-- NOME COGNOME-->
             <p>
                 <label for="nome">Nome</label>
                 <input type="text" id="nome" name="nome" placeholder="Nome">
-            
+        
                 <label for="cognome">Cognome</label>
                 <input type="text" id="lname" name="cognome" placeholder="Cognome">
             </p>

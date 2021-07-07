@@ -98,12 +98,34 @@ input[type=number], select {
     box-sizing: border-box;
     font-size: 12px;
 }
-.image{
-    height:600px;
-}
+
 @media screen and (max-width: 600px) {
+main{
+    margin:0 3em;
+    padding:10em 0em;
+}
 .contenitore{
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+.contenitore-blur-info{
+    width:100%;
+    margin-top:3em;
+    height: 600px;
+}
+input[type=text], select  {
+    height: 25px;
+    padding: 8px 10px;
 }
 
+input[type=oraio], select  {
+    height: 25px;
+    padding: 8px 10px;
+}
+
+input[type=number], select  {
+    height: 25px;
+    padding: 8px 10px;
+}
 }
