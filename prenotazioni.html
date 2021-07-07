@@ -1,0 +1,177 @@
+<html>
+<head>
+    <link rel="stylesheet" href="stile_base.css" type="text/css">
+    <link rel="stylesheet" href="stile_prenotazioni.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Ristorante il pacchero</title>
+    </head>
+<body>
+    <div class="flex-container">
+
+        <div class="blur">
+            <div class="topnav" id="myTopnav">  
+                <div><a href="../ristoranteilpacchero/index.html"><img class="logo" height="80px" src="images/logo.png" alt="Il pacchero"></a></div>
+                <div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+                <a href="../ristoranteilpacchero/index.html">HOME</a>
+                <a href="../ristoranteilpacchero/menu.html">MENU</a>
+                <a href="../ristoranteilpacchero/rubrica.html">RUBRICA</a>
+                <a href="../ristoranteilpacchero/prenotazioni.html">PRENOTAZIONI</a>
+                <a href="../ristoranteilpacchero/contatti.html">CONTATTI</a>
+                </div>
+            </div>
+        </div>
+
+
+    <main>
+         <!--contenitore ricetta del mese-->
+         <div class="titolo"><h2>PRENOTAZIONI</h2></div>
+    <div class="contenitore">
+        <!-- <picture>
+            <source media="(min-width:650px)" srcset="mappatav_600px.png w600">
+            <source media="(min-width:465px)" srcset="mappatav-300px.png w300">
+            <img src="images/ mappatav_600px.png" alt="Mappa Tavoli">
+          </picture> -->
+    <div class="image"></div> <img height=600px src="images/ mappatav.png">
+    <div class="contenitore-blur-info">
+        <form action="/action_page.php">
+            <!-- NOME COGNOME-->
+            <p>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome">
+            
+                <label for="cognome">Cognome</label>
+                <input type="text" id="lname" name="cognome" placeholder="Cognome">
+            </p>
+            
+            <!-- DATA -->
+             <p>
+                <label for="date">Data:</label>
+                <input type="date" id="start" name="data" value="2021-07-08" min="2021-07-08" max="2021-12-31">
+            </p>
+
+            <!-- SERVIZIO
+            <p>
+                <input class="button-1" type="button" value="Pranzo"><input class="button-1" type="button" value="Cena">
+            </p> -->
+            <!-- ORARIO -->
+            <p><label for="orario">Orario: </label>
+                          <select type="orario" id="orario" name="orario">
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                            <option value="22:00">22:00</option>
+                          </select>
+            </p>
+            <!-- PERSONE -->
+            <p>
+                <label for="tentacles">Persone: </label>
+                <input type="number" id="tentacles" name="tentacles" min="1" max="20">
+            </p>
+
+            <!-- EVENTO -->
+            <p>
+                <label for="evento">Evento: </label>
+                    <select id="evento" name="evento">
+                        <option value="cena-romantica">Cena romantica</option>
+                        <option value="cena-lavoro">Cena di lavoro</option>
+                        <option value="cerimonia">Cerimonia</option>
+                        <option value="compleanno">Compleanno</option>
+                        <option value="altro">Altro</option>
+                    </select>
+                   
+
+             <!-- TAVOLO -->
+             
+                <label for="tavolo">Tavolo: </label>
+                    <select id="tavolo" name="tavolo">
+                        <option value="cena-romantica">Tavolo Salerno</option>
+                        <option value="altro">Tavolo Vietri</option>
+                        <option value="altro">Tavolo Cetara</option>
+                        <option value="altro">Tavolo Erchie</option>
+                        <option value="cena-lavoro">Tavolo Minori</option>
+                        <option value="cerimonia">Tavolo Maiori</option>
+                        <option value="compleanno">Tavolo Ravello</option>
+                        <option value="compleanno">Tavolo Amalfi</option>
+                        <option value="compleanno">Tavolo Positano</option>
+                    </select>
+            </p>     
+            <!-- EMAIL -->
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" id="email" size="30" required>
+            </p>
+            <!-- TELEFONO -->
+            <p>
+                <label for="telefono">Telefono:</label>
+                    <input type="text" id="telefono" name="telefono" required>
+            </p>
+            <!-- NOTE -->
+            <p>
+                <label for="name">Note:</label>
+                <input type="text" id="name" name="name"size="10">
+            </p>
+            <!-- PRENOTA BUTTON --> 
+            <p>
+                <button onclick="myFunction()" class="button" id="send" type="submit">PRENOTA</button>
+              
+            </p>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <div href="../ristoranteilpacchero/index.html" class="logo"><img height="80px" src="images/logo.png" alt="Il pacchero"></div>
+        
+        <div class="text-footer">
+            <a class="title-footer" href="../ristoranteilpacchero/index.html">HOME</a><br><br>
+            <a class="title-footer" href="../ristoranteilpacchero/menu.html">MENU</a><br><br>
+            <a class="title-footer" href="../ristoranteilpacchero/rubrica.html">RUBRICA</a><br><br>
+            <a class="title-footer" href="../ristoranteilpacchero/prenotazioni.html">PRENOTAZIONI</a><br><br>
+        </div>
+
+        <div class="text-footer">
+            <a class="title-footer">POSIZIONE</a><br><br>
+            <a class="testo-footer" href="#">Salerno (SA) 84120</a><br>
+            <a class="testo-footer" href="https://goo.gl/maps/BtDWTDV5rttEyCuS9">Via Antonio <br>Maria De Luca,4</a>
+        </div>
+
+        <div class="text-footer">
+            <a class="title-footer" href="#">CONTATTI</a><br><br>
+            <a class="testo-footer" href="#">089 489010</a><br> 
+            <a class="testo-footer" href="#">334 5432020</a><br>
+            <div class="social">
+                <a href="https://www.facebook.com/ilpaccheroristorante"><img class="social-icon"width="18px"src="images/fb_icon.svg"></a>
+                <a href="https://www.instagram.com/ristoranteilpacchero/"><img class="social-icon"width="18px"src="images/instagram_icon.svg"></a>
+        </div>
+    </div>
+    <!-- </div> -->
+    </footer>
+
+<script>
+function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    
+</script>
+</body>
+</html>
